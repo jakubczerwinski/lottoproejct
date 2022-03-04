@@ -24,7 +24,9 @@ while True:
   
   
   def losowanie():
-    
+    """
+    Losuje 6 liczb i dodaje je do seta wylosowane liczby
+    """
     licznik = 6
     while licznik > 0:
         liczba = random.randint(1,49) 
@@ -37,7 +39,10 @@ while True:
 
       
   def sprawdz_wynik():
+    """
+    Wypisuje trafione liczby, liczby podane przez użytkownika oraz ilosc trafionych liczb    
     
+    """
     trafione_liczby = moje_liczby.intersection(wylosowane_liczby)
     ilosc_trafionych = len(trafione_liczby)
     
